@@ -1,0 +1,25 @@
+<div class="da-content-banner">
+  <div class="da-content-banner-title">
+    转账记录
+  </div>
+</div>
+  <div class="da-content-wrapper">
+    <da-layout-row [daGutter]="[24, 24]">
+      <da-col-item [daSpan]="24" [daXs]="24">
+        <div class="da-content-card">
+          <d-data-table #datatable [dataSource]="basicDataSource" [scrollable]="true" [tableOverflowType]="'overlay'" (multiSortChange)="multiSortChange($event)">
+            <d-column field="$index" header="" [width]="'50px'"></d-column>
+            <d-column
+              *ngFor="let colOption of dataTableOptions.columns"
+              [field]="colOption.field"
+              [header]="colOption.header"
+              [sortable]="true"
+              [fieldType]="colOption.fieldType"
+              [width]="'150px'"
+            >
+            </d-column>
+          </d-data-table>
+        </div>
+      </da-col-item>
+    </da-layout-row>
+  </div>

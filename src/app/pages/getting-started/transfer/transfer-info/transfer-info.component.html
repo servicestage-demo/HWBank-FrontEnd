@@ -1,0 +1,30 @@
+<div>
+    <form dForm ngForm [layout]="layoutDirection">
+        <d-form-item>
+            <d-form-label [required]="true">付款账户</d-form-label>
+            <d-form-control>
+                <div>
+                  <span>{{transferBody.transfer_out_card_no}}</span>
+                </div>
+            </d-form-control>
+        </d-form-item>
+        <d-form-item>
+            <d-form-label [required]="true">收款账户</d-form-label>
+            <d-form-control>
+                <div>
+                  <input class="width-400" dTextInput autocomplete="off" name="receiveAccount" [(ngModel)]="transferBody.transfer_in_card_no" />
+                </div>
+            </d-form-control>
+        </d-form-item>
+        <d-form-item>
+            <d-form-label [required]="true">转账金额</d-form-label>
+            <d-form-control>
+                <div>
+                  <input type="number" class="width-400" dTextInput autocomplete="off" name="amount" [(ngModel)]="transferBody.value"/>
+                </div>
+            </d-form-control>
+        </d-form-item>
+      </form>
+</div>
+
+

@@ -1,0 +1,50 @@
+{
+  "name": "OnlineBank",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "node --max_old_space_size=1024 ./node_modules/@angular/cli/bin/ng serve --host=0.0.0.0 --proxy-config proxy.conf.json --verbose",
+    "server": "npm run start",
+    "serve": "ng build & node server/index.js",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "14.2.1",
+    "@angular/common": "14.2.1",
+    "@angular/compiler": "14.2.1",
+    "@angular/core": "14.2.1",
+    "@angular/forms": "14.2.1",
+    "@angular/platform-browser": "14.2.1",
+    "@angular/platform-browser-dynamic": "14.2.1",
+    "@angular/router": "14.2.1",
+    "@avenueui/ng-devui": "^14.102.0",
+    "@avenueui/ng-devui-plus": "^14.50.1",
+    "@cloud/css-vars-ponyfill": "0.0.2",
+    "@cloud/cfdata": "^0.2.52-beta.5",
+    "@devui-design/icons": "^1.2.0",
+    "color": "^3.1.3",
+    "echarts": "^5.2.1",
+    "express": "^4.18.2",
+    "ng-devui": "^14.0.0",
+    "ng-devui-admin": "^15.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "14.2.1",
+    "@angular/cli": "14.2.1",
+    "@angular/compiler-cli": "14.2.1",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~4.8.2"
+  }
+}

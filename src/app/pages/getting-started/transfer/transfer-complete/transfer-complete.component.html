@@ -1,0 +1,23 @@
+<div class="big">
+    <div style="display: flex; justify-content: center;">
+        <div class="img"></div>
+    </div>
+    <div style="font-size: 24px; color:#1b1b1b; margin: 10px 0">操作成功</div>
+    <div>预计两小时内到账</div>
+    <div class="transfer-info" *ngIf="transferData.transfer_out_card_no">
+        <div class="info-item">
+            付款账号：{{transferData.transfer_out_card_no}}
+        </div>
+        <div class="info-item">
+            收款账号：{{transferData.transfer_in_card_no}}
+        </div>
+        <div class="info-item">
+            转账金额：
+            <span style="font-weight: 700; font-size: 28px;">
+                {{fiexdTwo(transferData.transfer_amount)}}
+            </span>
+            元
+        </div>
+    </div>
+</div>
+

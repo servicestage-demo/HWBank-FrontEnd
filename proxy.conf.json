@@ -1,0 +1,32 @@
+{
+    "/accounting": {
+        "target": "http://71.160.209.118:80",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true,
+        "headers": { "Host": "www.bank.com" },
+        "pathRewrite": {
+            "/accounting": "http://71.160.209.118:80/accounting"
+          }
+    },
+    "/usercenter": {
+        "target": "http://71.160.209.118:80",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true,
+        "headers": { "Host": "www.bank.com" },
+        "pathRewrite": {
+            "/usercenter": "http://71.160.209.118:80/usercenter"
+          }
+    },
+    "/infocenter": {
+        "target": "http://71.160.209.118:80",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true,
+        "headers": { "Host": "www.bank.com" },
+        "pathRewrite": {
+            "/infocenter": "http://71.160.209.118:80/infocenter"
+          }
+    }
+}
